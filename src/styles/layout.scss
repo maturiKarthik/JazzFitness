@@ -1,0 +1,31 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+section {
+  margin-top: 1em;
+}
+
+article {
+  margin-top: 1em;
+}
+
+.underline {
+  display: flex;
+  place-content: space-evenly;
+  width: 120px;
+
+  .parallelogram {
+    width: 20px;
+    height: 10px;
+    background: #32557f;
+    transform: skew(-20deg);
+  }
+}
+
+.main_title {
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,56 @@
+.custom_title {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    color: #050505;
+    line-height: 1.5em;
+    font-weight: bolder;
+  }
+}
+
+.contact {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2em;
+  margin: 4em;
+
+  .frm {
+    form {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 1em;
+      margin: 2em;
+      Button {
+        width: 150px;
+        margin-left: 8em;
+      }
+    }
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    iframe {
+      margin: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .contact {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    iframe {
+      height: 70vh;
+    }
+  }
+}

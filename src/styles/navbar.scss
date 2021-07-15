@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+header {
+  position: sticky;
+  display: flex;
+  place-content: space-between;
+  padding: 1em;
+  p {
+    flex: 1;
+    position: relative;
+    bottom: 15px;
+    font-weight: 800;
+    font-size: 1.3em;
+    font-family: "Poppins", sans-serif;
+  }
+  img {
+    flex: 1;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  width: 66%;
+  padding: 1em;
+  img {
+    flex: 1;
+  }
+  ul {
+    font-size: 2em;
+    color: ivory;
+    font-family: "Bebas Neue", cursive;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    i {
+      display: block;
+      margin: 2em;
+      padding: 1em;
+    }
+    li {
+      cursor: pointer;
+      list-style: none;
+      margin-top: 1em;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: whitesmoke;
+        text-decoration-thickness: 4px;
+      }
+    }
+  }
+}
+
+// mobile version
+@media only screen and (min-width: 670px) {
+  header {
+    font-family: "Bebas Neue", cursive;
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    padding: 4em;
+    margin: 1em;
+    .mobile-menu {
+      display: none;
+    }
+    p {
+      all: unset;
+      flex: 1;
+      font-size: 6em;
+      font-weight: 800;
+      font-size: 2.2vw;
+      font-family: "Poppins", sans-serif;
+      cursor: pointer;
+    }
+    nav {
+      all: unset;
+      flex: 2;
+      line-height: 2em;
+      display: flex;
+      align-items: center;
+      .fa {
+        display: none;
+      }
+      ul {
+        all: unset;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 3em;
+        li {
+          all: unset;
+          cursor: pointer;
+          margin-right: 2em;
+          font-size: 2vw;
+          color: black;
+          &:hover,
+          &:active {
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 0.3em;
+          }
+        }
+      }
+    }
+  }
+}

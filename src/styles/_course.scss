@@ -1,0 +1,57 @@
+/**
+ * courses *
+ *
+ * @format
+ */
+
+.courses {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    li {
+      margin-top: 2em;
+      list-style: none;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      p {
+        font-size: 1em;
+      }
+      &:hover {
+        color: royalblue;
+        position: relative;
+
+        p {
+          visibility: hidden;
+        }
+        p::before {
+          position: absolute;
+          padding-right: 0.7em;
+          visibility: visible;
+          content: "Learn more  ->";
+        }
+      }
+    }
+  }
+}
+
+// desktop version
+@media only screen and (min-width: 670px) {
+  .courses {
+    article {
+      ul {
+        margin-top: 2em;
+        display: flex;
+        min-width: 700px;
+        place-content: space-between;
+      }
+    }
+  }
+}

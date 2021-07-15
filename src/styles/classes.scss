@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+section {
+  display: flex;
+  flex-direction: column;
+
+  .art1 {
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    background-image: url("../images/womenworkout.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      margin-left: 8em;
+    }
+    sub {
+      margin-left: 10em;
+    }
+
+    .col {
+      color: #d86162;
+    }
+    p {
+      font-size: 2em;
+      line-height: 0.2em;
+    }
+  }
+
+  .art2 {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 4em;
+
+      text-align: center;
+      li {
+        width: 300px;
+        p {
+          font-family: "Poppins", sans-serif;
+        }
+        list-style: none;
+      }
+    }
+    .time_table {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+    }
+    sub {
+      font-size: 1em;
+      display: grid;
+      grid-template-columns: auto auto;
+      line-height: 2em;
+      font-weight: normal;
+      border-bottom: 0.5px solid black;
+    }
+  }
+
+  .art3 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .art2 {
+    li {
+      display: none;
+    }
+  }
+  .art3 {
+    display: inherit !important;
+    table {
+      width: 100%;
+      margin: 4em;
+      th {
+        font-family: arial, sans-serif;
+        font-weight: bold;
+        font-size: 0.9em;
+      }
+      .yoga_color {
+        background-color: #99a8de;
+        width: 100px;
+        height: 180px;
+        // background-color: hotpink;
+        text-align: center;
+      }
+      .zumba_color {
+        background-color: #c4993d;
+        width: 130px;
+        height: 190px;
+        // background-color: hotpink;
+        text-align: center;
+      }
+      tr:nth-child(odd) {
+        background-color: #dddddd;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        width: 55px;
+        height: 30px;
+      }
+    }
+  }
+}

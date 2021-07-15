@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .art1 {
+  font-family: "Poppins", sans-serif;
+  color: aliceblue;
+  background-image: url("../images/womenworkout.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .art1 div {
+  margin-left: 8em;
+}
+
+section .art1 sub {
+  margin-left: 10em;
+}
+
+section .art1 .col {
+  color: #d86162;
+}
+
+section .art1 p {
+  font-size: 2em;
+  line-height: 0.2em;
+}
+
+section .art2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .art2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4em;
+  text-align: center;
+}
+
+section .art2 ul li {
+  width: 300px;
+  list-style: none;
+}
+
+section .art2 ul li p {
+  font-family: "Poppins", sans-serif;
+}
+
+section .art2 .time_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+section .art2 sub {
+  font-size: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  line-height: 2em;
+  font-weight: normal;
+  border-bottom: 0.5px solid black;
+}
+
+section .art3 {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .art2 li {
+    display: none;
+  }
+  .art3 {
+    display: inherit !important;
+  }
+  .art3 table {
+    width: 100%;
+    margin: 4em;
+  }
+  .art3 table th {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  .art3 table .yoga_color {
+    background-color: #99a8de;
+    width: 100px;
+    height: 180px;
+    text-align: center;
+  }
+  .art3 table .zumba_color {
+    background-color: #c4993d;
+    width: 130px;
+    height: 190px;
+    text-align: center;
+  }
+  .art3 table tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+  .art3 table td,
+  .art3 table th {
+    border: 1px solid #dddddd;
+    width: 55px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=classes.css.map */

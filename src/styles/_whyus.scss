@@ -1,0 +1,69 @@
+/**
+ * WHY US
+ *
+ * @format
+ */
+
+.why_us {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 2em;
+      font-weight: bolder;
+      font-family: "Poppins", sans-serif;
+    }
+
+    ul {
+      li {
+        max-width: 280px;
+        border: 1px solid rebeccapurple;
+        border-radius: 15px;
+        padding: 12px;
+        margin-top: 0.9em;
+        list-style: none;
+        .title {
+          display: flex;
+          place-content: space-evenly;
+          p {
+            font-size: 1em;
+          }
+        }
+        span {
+          font-size: 0.9em;
+          font-weight: normal;
+          padding: 2px;
+        }
+      }
+    }
+  }
+}
+
+// desktop version
+@media only screen and (min-width: 670px) {
+  .why_us {
+    article {
+      ul {
+        background-image: url("../images/happy.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        background-position: center;
+        max-width: 900px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        place-content: space-between;
+        margin-top: 4em;
+
+        li {
+          border-style: none;
+        }
+      }
+      .spl {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
