@@ -1,8 +1,10 @@
 import * as React from "react"
+import { useState } from "react"
 import "../styles/navbar.css"
 import Menu from "../images/mobile_menu.png"
 import { navigate } from "gatsby-link"
-
+import { initial } from "lodash"
+import Close from "../images/close_icon.png"
 const nav = path => {
   switch (path) {
     case "home":
@@ -22,11 +24,23 @@ const nav = path => {
       break
   }
 }
+
+const UIActive = active => {
+  const nav = document.querySelector("nav")
+  if (active) {
+    nav.classList.add("mobile_nav")
+  } else {
+    nav.classList.remove("mobile_nav")
+  }
+}
+
 const Header = () => {
+  const [state, showState] = useState(false)
+
   return (
     <header>
       <p onClick={() => nav("home")}>JAZZ FITNESS</p>
-      <div>
+      <div onClick={() => UIActive(true)}>
         <img
           id="mobile-menu-btx"
           className="mobile-menu"
@@ -38,8 +52,13 @@ const Header = () => {
       </div>
 
       <nav>
-        <i className="fa fa-close"></i>
-
+        <img
+          onClick={() => UIActive(false)}
+          className="close"
+          src={Close}
+          width={30}
+          height={30}
+        />
         <ul>
           <li onClick={() => nav("home")}>HOME</li>
           <li onClick={() => nav("classes")}>Our Classes</li>

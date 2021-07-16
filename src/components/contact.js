@@ -18,7 +18,13 @@ const Contact = () => {
         </div>
         <div className="contact">
           <div className="frm">
-            <form noValidate autoComplete="off">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              noValidate
+              autoComplete="off"
+            >
               <TextField
                 id="outlined-basic"
                 label="Full Name"
