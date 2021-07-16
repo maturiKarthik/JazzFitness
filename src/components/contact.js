@@ -19,9 +19,10 @@ const Contact = () => {
         <div className="contact">
           <div className="frm">
             <form
+              method="post"
               name="contact"
-              netlify
-              netlify-honeypot="bot-field"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
               hidden
               noValidate
               autoComplete="off"
