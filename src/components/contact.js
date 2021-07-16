@@ -27,6 +27,7 @@ const Contact = () => {
               noValidate
               autoComplete="off"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <TextField
                 name="fullName"
                 id="outlined-basic"
