@@ -43,7 +43,9 @@ const Contact = () => {
                 placeholder="Leave your Query"
                 variant="outlined"
               />
-              <Button variant="contained">SUBMIT</Button>
+              <Button type="submit" variant="contained">
+                SUBMIT
+              </Button>
             </form>
           </div>
           <div className="frame">
