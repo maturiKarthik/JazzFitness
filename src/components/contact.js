@@ -26,16 +26,19 @@ const Contact = () => {
               autoComplete="off"
             >
               <TextField
+                name="fullName"
                 id="outlined-basic"
                 label="Full Name"
                 variant="outlined"
               />
               <TextField
+                name="PhoneNumber"
                 id="outlined-basic"
                 label="Phone Number"
                 variant="outlined"
               />
               <TextField
+                name="Description"
                 id="outlined-multiline-static"
                 label="Description"
                 multiline
