@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.photoGrid {
+  margin: 4em;
+  width: 100%;
+  height: 90%;
+  border: 1px solid rgb(68, 0, 255);
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.photo {
+  background-image: url("../../public/img/test.jpeg");
+  background-repeat: no-repeat;
+
+  border: 1px solid red;
+  margin: 2em;
+  width: 200px;
+  height: 200px;
+}

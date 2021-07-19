@@ -16,6 +16,9 @@ const nav = path => {
     case "classes":
       navigate("/class/")
       break
+    case "photos":
+      navigate("/gallery/")
+      break
     case "contact":
       navigate("#contact")
       break
@@ -59,9 +62,10 @@ const Header = () => {
           width={30}
           height={30}
         />
+
         <ul>
           <li onClick={() => nav("home")}>HOME</li>
-          <li onClick={() => nav("classes")}>Our Classes</li>
+          <li onClick={() => nav("classes")}>Classes</li>
           <li onClick={() => nav("contact")}>Contact</li>
           <li onClick={() => nav("about")}> ABOUT US</li>
         </ul>

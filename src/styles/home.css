@@ -316,6 +316,10 @@ article {
   --colorprimary: #51517b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /**HERO section **/
 .hero {
   display: -webkit-box;

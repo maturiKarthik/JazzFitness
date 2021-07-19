@@ -89,7 +89,7 @@ nav ul li {
   margin-top: 1em;
 }
 
-nav ul li:hover, nav ul li:active {
+nav ul li:hover, nav ul li:active, nav ul li:target {
   text-decoration: underline;
   -webkit-text-decoration-color: #0c0101;
           text-decoration-color: #0c0101;
@@ -157,7 +157,7 @@ nav ul li:hover, nav ul li:active {
     all: unset;
     cursor: pointer;
     margin-right: 2em;
-    font-size: 2vw;
+    font-size: 1.9vw;
     color: black;
   }
 }
