@@ -50,7 +50,7 @@ const Contact = () => {
                 variant="outlined"
               />
               <Button type="submit" variant="contained">
-                SUBMIT
+                SEND
               </Button>
             </form>
           </div>

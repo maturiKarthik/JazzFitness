@@ -43,8 +43,10 @@
 }
 
 .contact .frm form Button {
+  font-family: "Poppins", sans-serif;
+  background-color: #9ab0f1;
   width: 150px;
-  margin-left: 8em;
+  margin-left: 25%;
 }
 
 .contact .frame {
