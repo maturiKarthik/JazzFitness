@@ -12,8 +12,7 @@ import User1 from "../images/user1.png"
 import User2 from "../images/user2.png"
 import User3 from "../images/user3.png"
 import Instructor from "../images/instructor1.png"
-import insta from "../images/insta.png"
-import facebook from "../images/facebook.png"
+
 import { Link } from "@reach/router"
 
 const Home = () => {
@@ -21,24 +20,6 @@ const Home = () => {
     <>
       <section className="hero">
         <article className="article_1">
-          <ul className="social">
-            <li>
-              <a
-                href="https://www.instagram.com/jazz_fitness_studio/"
-                target="_blank"
-              >
-                <img src={insta} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/jazz_fitness_studio/"
-                target="_blank"
-              >
-                <img src={facebook} />
-              </a>
-            </li>
-          </ul>
           <div className="below_social">
             <img src={Running} alt="running-women.png" />
             <h1>GET IN - GET FIT</h1>

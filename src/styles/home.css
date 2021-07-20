@@ -349,25 +349,6 @@ html {
   text-align: center;
 }
 
-.hero .article_1 .social {
-  margin-left: 20%;
-  margin-bottom: 1em;
-  max-width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-evenly;
-}
-
-.hero .article_1 .social li {
-  list-style: none;
-}
-
-.hero .article_1 .social li img {
-  width: 35px;
-  height: 35px;
-}
-
 .hero .article_1 .below_social img {
   width: auto;
   height: 400px;

@@ -1,9 +1,9 @@
 footer {
-  width: 100vw;
+  width: 100%;
   margin-top: 3em;
   background-color: #222222;
   color: aliceblue;
-  height: 10vh;
+  height: 23vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,5 +17,23 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+footer .social li {
+  list-style: none;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
 }
 /*# sourceMappingURL=footer.css.map */
