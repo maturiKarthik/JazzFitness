@@ -5,6 +5,16 @@ import Menu from "../images/mobile_menu.png"
 import { navigate } from "gatsby-link"
 import { initial } from "lodash"
 import Close from "../images/close_icon.png"
+
+const UIActive = active => {
+  const nav = document.querySelector("nav")
+  if (active) {
+    nav.classList.add("mobile_nav")
+  } else {
+    nav.classList.remove("mobile_nav")
+  }
+}
+
 const nav = path => {
   switch (path) {
     case "home":
@@ -21,19 +31,11 @@ const nav = path => {
       break
     case "contact":
       navigate("#contact")
+      UIActive(false)
       break
     default:
       //no-opt
       break
-  }
-}
-
-const UIActive = active => {
-  const nav = document.querySelector("nav")
-  if (active) {
-    nav.classList.add("mobile_nav")
-  } else {
-    nav.classList.remove("mobile_nav")
   }
 }
 
